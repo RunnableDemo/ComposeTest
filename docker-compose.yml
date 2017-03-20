@@ -5,9 +5,10 @@ services:
     ports:
       - "27017:27017"
   web:
-    image: redis
+    image: mongo
     ports:
       - "3000:3000"
+    comm
     links:
       - "db:db"
     environment:
