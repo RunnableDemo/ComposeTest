@@ -5,7 +5,7 @@ services:
     ports:
       - "27017:27017"
   web:
-    build: git@github.com:RunnableDemo/node-starter.git#master
+    image: redis
     ports:
       - "3000:3000"
     links:
